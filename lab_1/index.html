@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walidacja formularza</title>
+</head>
+
+<body>
+    <header>
+        <h1>Walidacja formularza</h1>
+    </header>
+    <main>
+        <form action="">
+            <div class="form_box">
+                <label for="name">*Imię: </label>
+                <input type="text" id="name" name="name" placeholder="podaj imię" required>
+                <p class="err_mess"></p>
+            </div>
+            <div class="form_box">
+                <label for="email">*E-mail: </label>
+                <input type="email" name="email" id="email" placeholder="podaj email" required>
+                <p class="err_mess"></p>
+            </div>
+            <div class=" form_box">
+                <label for="password1">*Hasło: </label>
+                <input type="password" name="password1" id="password1" placeholder="podaj hasło" required>
+                <p class="err_mess"></p>
+            </div>
+            <div class=" form_box">
+                <label for="password2">*Powtórz hasło: </label>
+                <input type="password" name="password2" id="password2" placeholder="powtórz hasło" required>
+                <p class="err_mess"></p>
+            </div>
+            <div class="buttons">
+                <input type="reset" value="Wyczyść" id="reset">
+                <input type="submit" value="Wyślij" id="submit">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>Projekt WSB Gdynia lato 2026</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>

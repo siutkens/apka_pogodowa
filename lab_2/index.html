@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset='utf-8'>
+    <title>Pogoda</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+
+<body>
+    <header>
+        <h1>Aplikacja pogodowa</h1>
+    </header>
+    <main>
+        <div class="location">
+            <p class="city-name"></p>
+        </div>
+        <div class="search">
+            <div>
+                <i class="fa-solid fa-mug-hot"></i>
+                <input type="text" placeholder="podaj nazwę miasta">
+            </div>
+            <p class="error-message"></p>
+        </div>
+        <div class="weather">
+            <div class="weather-top">
+                <p class="date"></p>
+                <div class="temp-info">
+                    <p class="temp"></p>
+                    <div>
+                        <p class="description"></p>
+                        <p class="feels-like"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="weather-bottom">
+                <div class="weather-info">
+                    <p>Prędkość wiatru</p> <p class="wind-speed"></p>
+                </div>
+                <div class="weather-info">
+                    <p>Ciśnienie</p> <p class="pressure"></p>
+                </div>
+                <div class="weather-info">
+                    <p>Wilgotność</p> <p class="humidity"></p>
+                </div>
+                <div class="weather-info">
+                    <p>Widoczność</p> <p class="visibility"></p>
+                </div>
+                <div class="weather-info">
+                    <p>Zachmurzenie</p> <p class="clouds"></p>
+                </div>
+                <div class="weather-info">
+                    <p>Opady</p> <p class="rain"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Projekt UWSB Merito Gdynia 2026</p>
+        <p>Autor: Filip S.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src='./main.js'></script>
+    <script src="https://kit.fontawesome.com/95e8d3ca59.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
