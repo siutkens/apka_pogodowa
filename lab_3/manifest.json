@@ -1,0 +1,20 @@
+{
+  "name": "weatherApp",
+  "short_name": "weatherApp",
+  "description": "Aplikacja PWA do sprawdzania aktualnej pogody, pobierająca dane z API",
+  "theme_color": "#7f21f3",
+  "background_color": "#2134f3",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "lang": "pl",
+  "dir": "ltr",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "./icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
