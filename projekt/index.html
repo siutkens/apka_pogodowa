@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Szybka Książka - wyszukiwarka książek</title>
+</head>
+<body>
+    <header>
+        <a class="brand" href="./">
+            <span>Szybka Książka</span>
+        </a>
+    </header>
+
+    <main>
+        <section class="wyszukiwanie">
+            <h1>Szybko znajdź<br><em>następną książkę</em></h1>
+
+            <form class="formularz" role="search">
+                <input
+                    id="formularz-input"
+                    name="query"
+                    type="search"
+                    minlength="3"
+                    autocomplete="off"
+                    required
+                >
+                <button type="submit">Szukaj</button>
+            </form>
+        </section>
+
+        <section class="znalezione">
+            <div class="opis">
+                <div>
+                    <h2>Znalezione książki</h2>
+                </div>
+                <p id="liczbaZnalezionych"></p>
+            </div>
+
+            <div class="status">
+                <h3>Brak wyników</h3>
+            </div>
+
+            <div class="wynikiWyszukiwania"></div>
+
+            <nav class="nawigacja" hidden>
+                <button id="poprzedniaStrona" type="button">Poprzednia</button>
+                <span id="liczbaStron">Strona 1</span>
+                <button id="nastepnaStrona" type="button">Następna</button>
+            </nav>
+        </section>
+    </main>
+</body>
+</html>

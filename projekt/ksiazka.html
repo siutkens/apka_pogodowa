@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./ksiazka.js" defer></script>
+    <title>Książka - Szybka Książka</title>
+</head>
+<body>
+    <header>
+        <a class="brand" href="./">Szybka Książka</a>
+    </header>
+
+    <main class="szczegoly">
+        <a id="powrot" class="powrot" href="./index.html">← Wróć do wyszukiwania</a>
+
+        <div id="statusKsiazki" class="status">
+            <h3>Ładowanie książki...</h3>
+            <p>To powinno zająć tylko chwilę.</p>
+        </div>
+
+        <article id="widokKsiazki" class="ksiazka" hidden>
+            <div id="okladkaKsiazki" class="okladka-ksiazki">
+                <div class="brak-okladki">Brak okładki</div>
+            </div>
+
+            <div class="opis-ksiazki">
+                <p id="autorKsiazki" class="autor-ksiazki"></p>
+                <h1 id="tytulKsiazki"></h1>
+
+                <dl class="dane-ksiazki">
+                    <div>
+                        <dt>Pierwsze wydanie</dt>
+                        <dd id="rokWydania">Brak danych</dd>
+                    </div>
+                    <div>
+                        <dt>Tematy</dt>
+                        <dd id="tematyKsiazki">Brak danych</dd>
+                    </div>
+                </dl>
+
+                <h2>O książce</h2>
+                <p id="opisKsiazki">Brak opisu.</p>
+
+                <a
+                    id="linkOpenLibrary"
+                    class="link-zewnetrzny"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    Zobacz w Open Library
+                </a>
+            </div>
+        </article>
+    </main>
+</body>
+</html>

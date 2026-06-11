@@ -1,0 +1,282 @@
+:root {
+    --tekst: #222222;
+    --szary: #666666;
+    --kolor: #5db327;
+    --ramka: #cccccc;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    color: var(--tekst);
+    background: #ffffff;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    border-bottom: 1px solid var(--ramka);
+}
+
+header a {
+    color: var(--tekst);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.wyszukiwanie {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.wyszukiwanie h1 {
+    margin: 0;
+    font-size: clamp(2.3rem, 7vw, 4.5rem);
+}
+
+.wyszukiwanie h1 em {
+    color: var(--kolor);
+}
+
+.formularz {
+    display: flex;
+    max-width: 650px;
+    margin: 30px auto 0;
+}
+
+.formularz input {
+    min-width: 0;
+    flex: 1;
+    padding: 14px;
+    border: 1px solid var(--ramka);
+    border-right: 0;
+}
+
+.formularz button,
+.nawigacja button {
+    padding: 12px 20px;
+    border: 1px solid var(--kolor);
+    color: #ffffff;
+    background: var(--kolor);
+    cursor: pointer;
+}
+
+.znalezione {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px 70px;
+    border-top: 1px solid var(--ramka);
+}
+
+.znalezione .opis {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.opis h2 {
+    margin: 0;
+}
+
+.opis > p {
+    margin: 0;
+    color: var(--szary);
+}
+
+.status {
+    padding: 50px 20px;
+    border: 1px solid var(--ramka);
+    text-align: center;
+}
+
+.status h3 {
+    margin: 0 0 10px;
+}
+
+.status p {
+    margin: 0;
+    color: var(--szary);
+}
+
+.wynikiWyszukiwania {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.karta {
+    overflow: hidden;
+    border: 1px solid var(--ramka);
+}
+
+.pudelko {
+    display: grid;
+    height: 280px;
+    place-items: center;
+    overflow: hidden;
+}
+
+.pudelko img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.okladka {
+    padding: 20px;
+    color: var(--szary);
+    text-align: center;
+}
+
+.info {
+    padding: 15px;
+    border-top: 1px solid var(--ramka);
+}
+
+.info h3 {
+    margin: 0 0 8px;
+    font-size: 1rem;
+}
+
+.autor {
+    margin: 0 0 15px;
+    color: var(--szary);
+    font-size: 0.85rem;
+}
+
+.metadane {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding-top: 12px;
+    border-top: 1px solid var(--ramka);
+    color: var(--szary);
+    font-size: 0.75rem;
+}
+
+.metadane a {
+    color: var(--tekst);
+}
+
+.nawigacja {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.nawigacja button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.szczegoly {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px 70px;
+}
+
+.powrot {
+    display: inline-block;
+    margin-bottom: 25px;
+    color: var(--szary);
+}
+
+.ksiazka {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 40px;
+    padding-top: 30px;
+    border-top: 1px solid var(--ramka);
+}
+
+.okladka-ksiazki img {
+    display: block;
+    width: 100%;
+    border: 1px solid var(--ramka);
+}
+
+.brak-okladki {
+    display: grid;
+    min-height: 320px;
+    padding: 20px;
+    place-items: center;
+    border: 1px solid var(--ramka);
+    color: var(--szary);
+    text-align: center;
+}
+
+.opis-ksiazki h1 {
+    margin: 5px 0 25px;
+    font-size: 2.5rem;
+}
+
+.opis-ksiazki h2 {
+    margin: 30px 0 10px;
+    font-size: 1.2rem;
+}
+
+.opis-ksiazki > p {
+    line-height: 1.6;
+}
+
+.autor-ksiazki {
+    margin: 0;
+    color: var(--szary);
+}
+
+.dane-ksiazki {
+    display: flex;
+    gap: 35px;
+    margin: 0;
+    padding: 15px 0;
+    border-top: 1px solid var(--ramka);
+    border-bottom: 1px solid var(--ramka);
+}
+
+.dane-ksiazki dt {
+    color: var(--szary);
+    font-size: 0.8rem;
+}
+
+.dane-ksiazki dd {
+    margin: 4px 0 0;
+}
+
+.link-zewnetrzny {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--tekst);
+}
+
+@media (max-width: 600px) {
+    .ksiazka {
+        grid-template-columns: 1fr;
+    }
+
+    .okladka-ksiazki {
+        max-width: 220px;
+    }
+}
+
+[hidden] {
+    display: none !important;
+}
