@@ -9,5 +9,12 @@
   "lang": "pl",
   "dir": "ltr",
   "scope": "./",
-  "start_url": "./"
+  "start_url": "./",
+  "icons": [
+    {
+      "src": "./ikonka.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }
